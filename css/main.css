@@ -41,6 +41,56 @@ body{
     bottom: 0;
     margin-left: -50px;
 }
+.custom-btn{
+    background-color: #872b38;
+    padding: 10px 30px;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+}
+.custom-btn:hover{
+    text-decoration: none;
+    color: white;
+}
+.custom-outline-btn{
+    background-color: transparent;
+    border: 2px solid #872b38;
+    padding: 10px 30px;
+    color: #872b38;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+}
+.custom-outline-btn:hover{
+    background-color: #872b38;
+    color: white;
+    text-decoration: none;
+}
+.custom-outline-btn-white{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 30px;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+}
+.custom-outline-btn-white:hover{
+    background-color: white;
+    color: #872b38;
+    text-decoration: none;
+}
+.custom-color{
+    color: #872b38;
+}
+
 
 /*Navbar*/
 .navbar{
@@ -152,11 +202,12 @@ body{
 .hovereffect i{
     border: 1px solid white; 
     border-radius: 50%;
-    transition: background-color 0.8s;
+    transition: all 0.3s;
 }
 .hovereffect:hover i{
-    background-color: white;
-    color: black;
+    border: 1px solid #872b38;
+    background-color: #872b38;
+    color: white;
 }
 .hovereffect {
     width: 100%;
