@@ -227,6 +227,31 @@ body{
   z-index: -1;
 }
 
+/*Quote*/
+.quote-dash{
+    display: block;
+    height: 3px;
+    width: 100px;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    margin-left: -50px;
+}
+blockquote p{
+    font-family: georgia, serif;
+    font-style: italic;
+    padding: 0;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 1.737;
+}
+.blockquote-footer a{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+}
+
 /*Footer*/
 .footer-container{
     color: #ccc;
