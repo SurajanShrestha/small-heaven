@@ -16,3 +16,14 @@ function carouselResizeFunc(){
     document.getElementById('carousel-img').classList.remove('w-100');
 }*/
 //document.getElementById('body').addEventListener("load",carouselResizeFunc);
+
+window.onscroll = () => {
+    const nav = document.querySelector('.custom-navbar');
+    if(this.scrollY <= 70){
+        //nav.className = '';
+        nav.id='noscroll';
+    }else{
+        //nav.className = 'scroll';
+        nav.id='scroll';
+    }
+};

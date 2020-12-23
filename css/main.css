@@ -24,21 +24,70 @@ body{
     letter-spacing: 1px;
     font-weight: bold;
 }
+.font-album{
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
 .btn{
     border-radius: 0px;
 }
+.dash{
+    display: block;
+    height: 3px;
+    width: 100px;
+    background: rgba(0, 0, 0, 0.4);
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    margin-left: -50px;
+}
 
 /*Navbar*/
-.custom-navbar{
-    background-color: white;
+.navbar{
+    background-color: rgba(20, 20, 20, 0.4);
+    padding: 16px 40px;
+    transition: padding 0.5s;
 }
 .nav-item{
     padding: 0px 10px;
 }
+.custom-logo{
+    color: white;
+    font-size: 26px; 
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.navbar .navbar-nav .nav-item a{
+    color: white;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../images/navbar/menu-white.png');
+}
+#noscroll{
+    background-color: rgba(20, 20, 20, 0.4);
+    padding: 16px 40px;
+}
+#noscroll .navbar-toggler-icon {
+    background-image: url('../images/navbar/menu-white.png');
+}
+#scroll{
+    background-color: white;
+    box-shadow: 0px 4px 7px rgba(20, 20, 20, 0.3);
+    padding: 8px 40px;
+}
+#scroll .custom-logo{
+    color: black;
+}
+#scroll .navbar-nav .nav-item a{
+    color: black;
+}
+#scroll .navbar-toggler-icon {
+    background-image: url('../images/navbar/menu-black.png');
+}
 
 /*Carousel CSS*/
 .carousel{
-    margin-top: 70px;
+    /*margin-top: 70px;*/
 }
 .carousel-caption{
     height: 100%;
@@ -97,6 +146,18 @@ body{
 }
 
 /*Album Gallery*/
+.hovereffect img{
+    filter: brightness(65%);
+}
+.hovereffect i{
+    border: 1px solid white; 
+    border-radius: 50%;
+    transition: background-color 0.8s;
+}
+.hovereffect:hover i{
+    background-color: white;
+    color: black;
+}
 .hovereffect {
     width: 100%;
     height: 100%;
@@ -104,7 +165,7 @@ body{
     overflow: hidden;
     position: relative;
     text-align: center;
-    cursor: default;
+    cursor: pointer;
     background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
     background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
 
