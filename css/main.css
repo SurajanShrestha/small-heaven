@@ -100,6 +100,7 @@ body{
 .custom-navbar .navbar-nav .nav-item .active{
     border-bottom: 2px solid #872b38;
     color: white;
+    background-color: transparent;
 }
 @media screen and (min-width: 700px){
     .custom-navbar{
