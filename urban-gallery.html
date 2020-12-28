@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Urban Gallery</title>
 
     <!--Bootstrap CDNs-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -20,6 +20,11 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <!--Fancybox-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <!--CSS-->
     <link rel="stylesheet" href="./css/main.css">
@@ -50,7 +55,7 @@
                         Gallery
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="urban-gallery.html">Urban Education</a>
+                        <a class="dropdown-item active" href="urban-gallery.html">Urban Education</a>
                         <a class="dropdown-item" href="rural-gallery.html">Rural Education</a>
                     </div>
                 </li>
@@ -58,7 +63,7 @@
                   <a class="nav-link" href="donate.html">Donate</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                   </li>
               </ul>
             </div>
@@ -72,12 +77,12 @@
               <div class="container">
                 <div class="row">
                   <div class="col-lg-12 pt-5 pb-3 d-flex flex-column justify-content-center align-items-center wow animate__fadeInDown" data-wow-duration="1800ms">
-                    <h3 class="font-medium">Contact</h3>
+                    <h3 class="font-medium">Urban Gallery</h3>
                   </div>
                   <div class="col-lg-12 wow animate__fadeInDown" data-wow-duration="1800ms" data-wow-delay="0.6s">
                     <div class="breadcrumbs text-center font-italic">
                       <a href="./index.html" class="font-small active">Home</a>&nbsp; <i class="fa fa-caret-right" aria-hidden="true"></i>
-                      <a class="font-small"> &nbsp;Contact</a></i>
+                      <a class="font-small"> &nbsp;Urban Gallery</a></i>
                     </div>
                   </div>
                 </div>
@@ -85,62 +90,100 @@
             </div>
         </div>
 
-        <!--Contact Container-->
-        <div class="contact-container pt-0 pb-5 mt-0 mb-5 px-3">
+        <!--Gallery-->
+        <div class="gallery-container pt-0 pb-5 mt-0 mb-5">
           <div class="container">
             <div class="row">
-              <div class="col-lg-12 my-3 py-5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.0495357093195!2d85.30506392917938!3d27.71116788620863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQyJzQwLjIiTiA4NcKwMTgnMjAuMiJF!5e0!3m2!1sen!2snp!4v1609142163146!5m2!1sen!2snp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="col-lg-12 my-5 p-5 text-center">
+                <h3 class="font-medium custom-color">Urban Gallery</h3>
+                <span class="quote-dash"></span>
               </div>
-              <div class="col-lg-4 border contact-box p-4 mb-3">
-                <h5 class="custom-color">Contact Us</h5>
-                <br>
-                <div class="info-box d-flex mb-2">
-                    <p class="info-icon custom-color"><i class="fa fa-user" aria-hidden="true"></i></p>
-                    <div class="d-flex flex-column pl-4 ml-3 pt-2">
-                        <p class="font-xsmall">Shyam Shrestha (Founder Principal)</p>
+              <div class="col-lg-4 gallery p-0">
+                  <div class="gallery-img">
+                    <img id="thumbnail" class="thumbnail mx-0" src="./images/album-gallery/thumbnails/urban/t1.jpg" width="100%" height="100%">
+                    <div class="hover d-flex justify-content-center align-items-center">
+                        <a data-fancybox="gallery" href="./images/album-gallery/urban-optimized/u1.jpg" class="p-3">
+                            <i class="fa fa-expand"></i>
+                        </a>
                     </div>
-                </div>
-                <div class="info-box d-flex mb-2">
-                    <p class="info-icon custom-color"><i class="fa fa-building-o" aria-hidden="true"></i></p>
-                    <div class="d-flex flex-column pl-4 ml-3 pt-2">
-                        <p class="font-xsmall">Small Heaven Boarding School</p>
-                    </div>
-                </div>
-                <div class="info-box d-flex mb-2">
-                    <p class="info-icon custom-color"><i class="fa fa-map-marker" aria-hidden="true"></i></p>
-                    <div class="d-flex flex-column pl-4 ml-3 pt-2">
-                        <p class="font-xsmall">Chhetrapati, Bhurungkhel - Ward No. 17, Kathmandu, Nepal</p>
-                    </div>
-                </div>
-                <div class="info-box d-flex mb-2">
-                    <p class="info-icon custom-color"><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
-                    <div class="d-flex flex-column pl-4 ml-3 pt-2">
-                        <p class="font-xsmall">shyam_35@hotmail.com</p>
-                    </div>
-                </div>
-                <!--<p class="font-xsmall"><i class="fa fa-user-o info-icon custom-color" aria-hidden="true"></i> &nbsp;Shyam Shrestha (Founder Principal)</p>
-                <p class="font-xsmall"><i class="fa fa-building-o" aria-hidden="true"></i> &nbsp;Small Heaven Boarding School</p>
-                <p class="font-xsmall"><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;Chhetrapati, Bhurungkhel - Ward No. 17, Kathmandu, Nepal</p>
-                <p class="font-xsmall"><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;shyam_35@hotmail.com</p>-->
+                  </div>
               </div>
-              <div class="col-lg-7 offset-lg-1 border contact-box p-4 mb-3">
-                <h5 class="custom-color">Contact Form</h5>
-                <form class="mt-3" action="#" method="POST">
-                    <div class="row">
-                        <div class="col-lg-6 p-3">
-                            <input class="mb-3" type="text" id="name" name="name" placeholder="Enter Your Name" />
-                            <input class="mb-3" type="text" id="address" name="address" placeholder="Enter Your Address" />
-                            <input class="mb-3" type="email" id="email" name="email" placeholder="Enter Your Email" />
-                        </div>
-                        <div class="col-lg-6 p-3">
-                            <textarea id="w3review" name="w3review" rows="6" placeholder="Write Your Message"></textarea>
-                        </div>
-                        <div class="col-12 d-flex justify-content-end">
-                            <button class="custom-btn">Submit</button>
-                        </div>
+              <div class="col-lg-4 gallery p-0">
+                  <div class="gallery-img">
+                    <img id="thumbnail" class="thumbnail mx-0" src="./images/album-gallery/thumbnails/urban/t2.jpg" width="100%" height="100%">
+                    <div class="hover d-flex justify-content-center align-items-center">
+                        <a data-fancybox="gallery" href="./images/album-gallery/urban-optimized/u2.jpg" class="p-3">
+                            <i class="fa fa-expand"></i>
+                        </a>
                     </div>
-                </form>
+                  </div>
+              </div>
+              <div class="col-lg-4 gallery p-0">
+                  <div class="gallery-img">
+                    <img id="thumbnail" class="thumbnail mx-0" src="./images/album-gallery/thumbnails/urban/t3.jpg" width="100%" height="100%">
+                    <div class="hover d-flex justify-content-center align-items-center">
+                        <a data-fancybox="gallery" href="./images/album-gallery/urban-optimized/u3.jpg" class="p-3">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 gallery p-0">
+                  <div class="gallery-img">
+                    <img id="thumbnail" class="thumbnail mx-0" src="./images/album-gallery/thumbnails/urban/t4.jpg" width="100%" height="100%">
+                    <div class="hover d-flex justify-content-center align-items-center">
+                        <a data-fancybox="gallery" href="./images/album-gallery/urban-optimized/u4.jpg" class="p-3">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 gallery p-0">
+                  <div class="gallery-img">
+                    <img id="thumbnail" class="thumbnail mx-0" src="./images/album-gallery/thumbnails/urban/t5.jpg" width="100%" height="100%">
+                    <div class="hover d-flex justify-content-center align-items-center">
+                        <a data-fancybox="gallery" href="./images/album-gallery/urban-optimized/u5.jpg" class="p-3">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 gallery p-0">
+                  <div class="gallery-img">
+                    <img id="thumbnail" class="thumbnail mx-0" src="./images/album-gallery/thumbnails/urban/t6.jpg" width="100%" height="100%">
+                    <div class="hover d-flex justify-content-center align-items-center">
+                        <a data-fancybox="gallery" href="./images/album-gallery/urban-optimized/u6.jpg" class="p-3">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 gallery p-0">
+                  <div class="gallery-img">
+                    <img id="thumbnail" class="thumbnail mx-0" src="./images/album-gallery/thumbnails/urban/t7.jpg" width="100%" height="100%">
+                    <div class="hover d-flex justify-content-center align-items-center">
+                        <a data-fancybox="gallery" href="./images/album-gallery/urban-optimized/u7.jpg" class="p-3">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Donate Now-->
+        <div class="donate-now-container mb-3">
+          <div class="pimg2 d-flex flex-column justify-content-center mt-0">
+            <div class="container my-5 py-3">
+              <div class="row">
+                <div class="col-lg-8 p-3 wow animate__fadeInLeft" data-wow-duration="1800ms" data-wow-delay="0.4s">
+                  <h3 class="font-medium">Support Our Cause</h3>
+                  <p class="font-xsmall">Support us in providing all essential things like books, copies, uniforms, shoes, sweater, bags and daily snack to students.</p>
+                </div>
+                <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center wow animate__fadeInRight" data-wow-duration="1800ms" data-wow-delay="0.4s">
+                  <a href="donate.html" class="mt-2 custom-btn">Donate Now</a>
+                </div>
               </div>
             </div>
           </div>

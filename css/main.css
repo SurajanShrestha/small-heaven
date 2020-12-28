@@ -535,3 +535,29 @@ blockquote p{
     font-size: 24px;
     position: absolute;
 }
+
+/*Gallery*/
+.gallery-img{
+    width: 92%; 
+    height: 94%; 
+    position: relative; 
+    left: 4%; 
+    top: 3%;
+}
+.gallery .hover{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+.gallery .hover:hover{
+    opacity: 1;
+}
+.gallery .hover a{
+    color: white;
+    font-size: 24px;
+}
